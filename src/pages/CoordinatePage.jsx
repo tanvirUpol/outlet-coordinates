@@ -95,17 +95,14 @@ function CoordinatePage() {
       if(docRef){
         toast.success('Successfully Submitted!')
         setLoading(false)
+        setLongitude("")
+        setLatitude("")
       }
     } catch (e) {
       console.error("Error adding document: ", e);
       toast.error("Problem submitting the data!")
       setLoading(false)
     }
-
-
-    // console.log("Selected Option:", selectedOption);
-    // console.log("Latitude:", latitude);
-    // console.log("Longitude:", longitude);
   };
 
 
